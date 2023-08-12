@@ -1,6 +1,6 @@
 import React from 'react'
 import img1 from './img.png'
-export default function LandingHomePage() {
+export default function LandingHomePage({openModal}) {
   return (
     <div className='LandingHomePage'>
 
@@ -22,7 +22,7 @@ export default function LandingHomePage() {
         <div className="mainBigInfo">
           <div className="imgButton">
             <img src={img1} alt="" />
-            <button>Ro'yxatdan o'tish</button>
+            <button onClick={() => openModal()}>Ro'yxatdan o'tish</button>
           </div>
           <p>Shoshiling! Joylar soni oz qoldi</p>
         </div>
