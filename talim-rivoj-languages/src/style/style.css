@@ -5,12 +5,12 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
-
-body {
+body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background: rgb(96, 178, 255);
+    background: linear-gradient(0deg, rgba(96, 178, 255, 1) 10%, rgba(72, 142, 209, 1) 47%, rgba(41, 90, 185, 1) 100%);
 }
-
 .LandingHomePage {
     display: flex;
     justify-content: space-between;
@@ -45,8 +45,6 @@ header p {
     height: 1100px;
     width: 100%;
     padding: 45px 0px;
-    background: rgb(96, 178, 255);
-    background: linear-gradient(0deg, rgba(96, 178, 255, 1) 10%, rgba(72, 142, 209, 1) 47%, rgba(41, 90, 185, 1) 100%);
 }
 
 .mainHeaderInfo {
@@ -100,6 +98,7 @@ header p {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    width: 100%;
 }
 
 .imgButton {
@@ -168,9 +167,9 @@ header p {
 }
 
 .footer {
+    width: 100%;
     height: 350px;
     background-color: black;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
