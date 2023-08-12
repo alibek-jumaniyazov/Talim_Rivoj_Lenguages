@@ -37,7 +37,7 @@ const TelegramBotForm = ({ modal, closeModal }) => {
   }
   function Rus() {
     setTil('Rus')
-    setLeft(68)
+    setLeft(65)
     setColor({
       turk: 'black',
       engilsh: 'black',
