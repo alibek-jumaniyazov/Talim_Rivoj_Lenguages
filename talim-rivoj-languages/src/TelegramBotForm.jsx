@@ -58,7 +58,7 @@ const TelegramBotForm = ({ modal, closeModal }) => {
     const chatId = '2119173106'; // Telegram user ni ChatId 
 
     const message = `
-      Yengi foydalanuvchi:
+      Yangi foydalanuvchi:  
       Name: ${formData.name}
       Telefon Raqam: ${formData.tel}
       Til: ${til}
