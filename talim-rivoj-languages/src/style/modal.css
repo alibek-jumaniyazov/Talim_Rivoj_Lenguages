@@ -15,12 +15,17 @@
 .modalHeader{
     width: 100%;
     height: 50px;
-    background-color: aqua;
-    /* border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px; */
+    background: rgb(1,13,157);
+    background: linear-gradient(0deg, rgba(1,13,157,1) 0%, rgba(0,1,58,1) 100%);
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-.modalHeader h1{
-    font-size: 20px;
+.modalHeader img{
+    width: 100px;
+    height: 30px;
 }
 .Modal .ModalBox {
 
@@ -35,16 +40,16 @@
 }
 
 .modalHeader {
-
     width: 100vw;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #211eb7;
+    color: #010d9d;
     font-weight: 600;
     font-size: 18px;
-    background: linear-gradient(0deg, rgba(96, 178, 255, 1) 10%, rgba(72, 142, 209, 1) 47%, rgba(41, 90, 185, 1) 100%);
+    background: rgb(1,13,157);
+    background: linear-gradient(0deg, rgba(1,13,157,1) 0%, rgba(0,1,58,1) 100%);
 }
 
 .fa-xmark {
@@ -61,7 +66,7 @@
     font-size: 26px;
     font-weight: 600;
     color: #000000;
-
+    margin-top: 30px;
 }
 .modalInputs{
     width: 95%;
@@ -100,7 +105,10 @@
     height: 54px;
     padding: 12.050000190734863px 45.40999984741211px 13.949999809265137px 45.59000015258789px;
     border-radius: 15px;
-    background-color: #211eb7;
+    background-color: #010d9d;
+
+}
+.modalButton a{
     color: white;
     font-size: 18px;
     font-weight: 700;
@@ -113,7 +121,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #211eb7;
+    border: 1px solid #010d9d;
     border-radius: 10px;
 }
 .Languages h5{
@@ -127,7 +135,7 @@
 }
 .BgDiv{
     position: absolute;
-    background-color: #211eb7;
+    background-color: #010d9d;
     width: 120px;
     height: 100%;
     border-radius: 5px;

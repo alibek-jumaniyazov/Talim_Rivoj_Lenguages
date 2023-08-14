@@ -1,28 +1,27 @@
 import React from 'react'
-import img1 from './img.png'
-export default function LandingHomePage({openModal}) {
+import img1 from './Logo.png'
+import { Link } from 'react-router-dom'
+export default function LandingHomePage() {
+
+  
   return (
     <div className='LandingHomePage'>
-
       {/* Mobila Version */}
-
       <div className="header">
         <p>15-16-17 - IYUN | BEPUL MARAFON</p>
       </div>
       <div className="main">
         <div className="mainHeaderInfo">
-          <p>15-16-17 - IYUN</p>
-          <span>Dovranbek Turdiev</span>
+          <p>25 - AVGUST</p>
+          <span>Talim Rivoj</span>
         </div>
         <h5 className="mainText">
-          3 Kun Ichida Har Qanday
-          Ma'lumotni Tezroq Eslab Qolishni
-          O'rganing!
+        1 HAFTA BEPUL DARSDA KUNDALIK MULOQOTINGIZNI CHET TILLARIDA QILISH DARAJASIGA CHIQING
         </h5>
         <div className="mainBigInfo">
           <div className="imgButton">
             <img src={img1} alt="" />
-            <button onClick={() => openModal()}>Ro'yxatdan o'tish</button>
+          <Link to={'register'}>  <button>Ro'yxatdan o'tish</button></Link>
           </div>
           <p>Shoshiling! Joylar soni oz qoldi</p>
         </div>

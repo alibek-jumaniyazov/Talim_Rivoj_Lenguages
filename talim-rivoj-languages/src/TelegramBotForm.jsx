@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import img1 from './Logo.png'
+import { Link } from 'react-router-dom';
 
-const TelegramBotForm = ({ modal, closeModal }) => {
+const TelegramBotForm = () => {
+
 
   const [formData, setFormData] = useState({
     name: '',
@@ -73,7 +76,7 @@ const TelegramBotForm = ({ modal, closeModal }) => {
           chat_id: chatId,
           text: message,
         });
-
+        
         // Malumotlarni uzatganizdan keyin input ishidegi malumot ochib ketadi
         setFormData({ name: '', tel: '+998 ', setTil: 'Turk' });
       }
@@ -85,8 +88,10 @@ const TelegramBotForm = ({ modal, closeModal }) => {
   };
 
   return (
-    <div className={modal}>
-      <div className="modalHeader"><h1></h1></div>
+    <div className="Modal">
+      <div className="modalHeader">
+        <img src={img1} alt="" />
+      </div>
       <form onSubmit={handleSubmit} className='ModalBox'>
 
         <i class="fa-solid fa-xmark" onClick={() => closeModal()}></i>
@@ -111,7 +116,7 @@ const TelegramBotForm = ({ modal, closeModal }) => {
             <h5 href='#' onClick={() => Rus()} style={{ color: color.rus }} >Rus Tili</h5>
           </div>
         </div>
-        <button type="submit" className='modalButton'>Yuborish</button>
+        <button type="submit" className='modalButton'><Link to={"tgkanal"}>  Yuborish </Link></button>
       </form>
     </div>
   );
