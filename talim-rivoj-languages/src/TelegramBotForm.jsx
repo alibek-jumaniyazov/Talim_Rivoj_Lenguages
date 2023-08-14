@@ -3,7 +3,8 @@ import axios from 'axios';
 import img1 from './images/Logo.png'
 import { Link } from 'react-router-dom';
 
-const TelegramBotForm = () => {
+const TelegramBotForm = ({ setTillar, turk, engilsh, rus }) => {
+
 
 
   const [formData, setFormData] = useState({
@@ -22,6 +23,7 @@ const TelegramBotForm = () => {
 
   function Turk() {
     setTil('Turk')
+    setTillar(turk)
     setLeft(0)
     setColor({
       turk: 'white',
@@ -31,6 +33,7 @@ const TelegramBotForm = () => {
   }
   function Engilsh() {
     setTil('English')
+    setTillar(engilsh)
     setLeft(34)
     setColor({
       turk: 'black',
@@ -40,6 +43,7 @@ const TelegramBotForm = () => {
   }
   function Rus() {
     setTil('Rus')
+    setTillar(rus)
     setLeft(65)
     setColor({
       turk: 'black',
@@ -89,36 +93,35 @@ const TelegramBotForm = () => {
 
   return (
     <div className="Modal">
-      <div className="modalHeader">
-        <img src={img1} alt="" />
-      </div>
-      <form onSubmit={handleSubmit} className='ModalBox'>
-
-       <Link to={"/"}> <i class="fa-solid fa-xmark" onClick={() => closeModal()}></i> </Link>
-        <p className="modalInfo">
-          Ro'yxatdan o'tish uchun
-          ma'lumotlaringizni
-          kiriting!
-        </p>
-        <div className="modalInputs">
+    <div className="modalHeader">
+      <img src={img1} alt="" />
+    </div>
+    <form onSubmit={handleSubmit} className='ModalBox'>
+      <Link to={"/"}> <i className="fa-solid fa-xmark" onClick={() => closeModal()}></i> </Link>
+      <p className="modalInfo">
+        Ro'yxatdan o'tish uchun
+        ma'lumotlaringizni
+        kiriting!
+      </p>
+      <div className="modalInputs">
+        <div className="inputTitle">
+          <p>Ism Familiya</p>
+          <input type="text" name="name" placeholder="Ism Familiya" value={formData.name} onChange={handleChange} />
           <div className="inputTitle">
-            <p>Ism Familiya</p>
-            <input type="text" name="name" placeholder="Ism Familiya" value={formData.name} onChange={handleChange} />
-            <div className="inputTitle">
-              <p>Telefon raqamingiz</p>
-              <input type="tel" name="tel" placeholder="Telefon raqam" value={formData.tel} onChange={handleChange} defaultValue={formData.tel} />
-            </div>
+            <p>Telefon raqamingiz</p>
+            <input type="tel" name="tel" placeholder="Telefon raqam" value={formData.tel} onChange={handleChange} />
           </div>
-          <div className="Languages">
+        </div>
+        <div className="Languages">
             <div className="BgDiv" style={{ left: `${left}%` }}></div>
             <h5 href='#' onClick={() => Turk()} style={{ color: color.turk }}>Turk Tili</h5>
             <h5 href='#' onClick={() => Engilsh()} style={{ color: color.engilsh }}>Ingilz Tili</h5>
             <h5 href='#' onClick={() => Rus()} style={{ color: color.rus }} >Rus Tili</h5>
           </div>
-        </div>
-        <button type="submit" className='modalButton'><Link to={"tgkanal"}>  Yuborish </Link></button>
-      </form>
-    </div>
+      </div>
+      <button type="submit" className='modalButton'><Link to={"tgkanal"}>  Yuborish </Link></button>
+    </form>
+  </div>
   );
 };
 
