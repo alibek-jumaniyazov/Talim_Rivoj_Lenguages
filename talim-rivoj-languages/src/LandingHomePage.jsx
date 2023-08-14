@@ -12,7 +12,7 @@ export default function LandingHomePage() {
         <div className="animated-text">
           <div className="line">Turk Tili</div>
           <div className="line">Rus Tili</div>
-          <div className="line">Engilish Tili</div>
+          <div className="line">Ingliz Tili</div>
         </div>
       </div>
       <div className="main">
