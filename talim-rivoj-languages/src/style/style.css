@@ -47,7 +47,7 @@ header p {
     align-items: center;
     flex-direction: column;
     gap: 46px;
-    height: 950px;
+    height: 1100px;
     padding: 45px 0px;
 }
 
@@ -114,7 +114,8 @@ header p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0px;
+    gap: 20px;
+    margin-top: -60px;
 }
 
 .imgButton img {
@@ -353,6 +354,6 @@ header p {
     }
   }
   video{
-    border-radius: 20px;
+    /* border-radius: 20px; */
   }
 /* } */
