@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import img1 from './Logo.png'
+import img1 from './images/Logo.png'
 import { Link } from 'react-router-dom';
 
 const TelegramBotForm = () => {
@@ -94,7 +94,7 @@ const TelegramBotForm = () => {
       </div>
       <form onSubmit={handleSubmit} className='ModalBox'>
 
-        <i class="fa-solid fa-xmark" onClick={() => closeModal()}></i>
+       <Link to={"/"}> <i class="fa-solid fa-xmark" onClick={() => closeModal()}></i> </Link>
         <p className="modalInfo">
           Ro'yxatdan o'tish uchun
           ma'lumotlaringizni

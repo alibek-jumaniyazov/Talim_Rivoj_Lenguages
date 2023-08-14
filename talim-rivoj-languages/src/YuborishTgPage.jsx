@@ -1,5 +1,5 @@
 import React from 'react'
-import tgicon from './tgimg.png'
+import tgicon from './images/tgimg.png'
 
 export default function YuborishTgPage() {
   return (

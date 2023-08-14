@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from './Logo.png'
+import img1 from './images/Logo.png'
 import { Link } from 'react-router-dom'
 export default function LandingHomePage() {
 
