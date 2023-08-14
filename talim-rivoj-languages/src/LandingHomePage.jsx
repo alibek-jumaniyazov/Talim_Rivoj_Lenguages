@@ -1,5 +1,6 @@
 import React from 'react'
 import video1 from './IMG_3777.mp4'
+import img1 from './images/logo.png'
 import { Link } from 'react-router-dom'
 
 export default function LandingHomePage() {
@@ -26,7 +27,7 @@ export default function LandingHomePage() {
         <div className="mainBigInfo">
           <div className="imgButton">
             {/* <img src={img1} alt="" /> */}
-            <video controls width="340" height="360" >
+            <video controls width="340" height="360" poster={img1} >
               <source src={video1} type='video/mp4' />
             </video>
           <Link to={'register'}>  <button>Ro'yxatdan o'tish</button></Link>
