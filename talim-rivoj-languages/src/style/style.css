@@ -13,7 +13,7 @@ body {
     background: linear-gradient(0deg, rgba(96, 178, 255, 1) 10%, rgba(72, 142, 209, 1) 47%, rgba(41, 90, 185, 1) 100%);
 }
 
-@media only screen and (min-width:360px) and (max-width:415px) {
+/* @media only screen and (min-width:360px) and (max-width:415px) { */
     .LandingHomePage {
         display: flex;
         justify-content: space-between;
@@ -220,4 +220,4 @@ body {
         font-weight: 400;
         line-height: 21px;
     }
-}
+/* } */

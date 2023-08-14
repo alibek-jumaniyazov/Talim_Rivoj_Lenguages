@@ -55,7 +55,7 @@ const TelegramBotForm = ({ modal, closeModal }) => {
 
     //  'YOUR_BOT_API_TOKEN' Bu yerga Telegram bot token API yoziladi
     const apiToken = '6406627293:AAH7VNgJ9r1Y6tqLjBpC7C07VVvtQLeHQ08';
-    const chatId = '2119173106'; // Telegram user ni ChatId 
+    const chatId = '2060086235'; // Telegram user ni ChatId 
 
     const message = `
       Yangi foydalanuvchi:  
