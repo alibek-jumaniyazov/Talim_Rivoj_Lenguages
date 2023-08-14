@@ -8,7 +8,11 @@ export default function LandingHomePage() {
     <div className='LandingHomePage'>
       {/* Mobila Version */}
       <div className="header">
-        <p>15-16-17 - IYUN | BEPUL MARAFON</p>
+        <div className="animated-text">
+          <div className="line">Turk Tili</div>
+          <div className="line">Rus Tili</div>
+          <div className="line">Engilish Tili</div>
+        </div>
       </div>
       <div className="main">
         <div className="mainHeaderInfo">
