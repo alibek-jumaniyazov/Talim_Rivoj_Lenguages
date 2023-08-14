@@ -25,7 +25,7 @@ export default function LandingHomePage() {
           <span>Talim Rivoj</span>
         </div>
         <h5 className="mainText">
-          1 HAFTA BEPUL DARSDA KUNDALIK MULOQOTINGIZNI CHET TILLARIDA QILISH DARAJASIGA CHIQING
+          1 Hafta bepul darsda kundalik muloqotingizni chet tillarida qilish darajasiga chiqing
         </h5>
         <div className="mainBigInfo">
           <div className="imgButton">

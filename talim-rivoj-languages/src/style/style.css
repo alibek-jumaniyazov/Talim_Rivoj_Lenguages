@@ -88,13 +88,13 @@ header p {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 28px;
     color: white;
-    width: 314.09px;
+    width: 330.09px;
     height: 72px;
-    padding: 0px 0.089996337890625px 0px 0px;
+    /* padding: 0px 0.089996337890625px 0px 0px; */
 }
 
 .mainBigInfo {
