@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
@@ -87,7 +88,7 @@ header p {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 700;
     line-height: 24px;
     color: white;
