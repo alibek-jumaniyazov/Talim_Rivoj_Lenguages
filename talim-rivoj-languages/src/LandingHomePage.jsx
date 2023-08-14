@@ -1,10 +1,11 @@
 import React from 'react'
-import video1 from './IMG_3777.mp4'
+import video1 from './images/video.mp4'
+import img from './images/Logo.png'
 import { Link } from 'react-router-dom'
 
 export default function LandingHomePage() {
 
-  
+
   return (
     <div className='LandingHomePage'>
       {/* Mobila Version */}
@@ -21,15 +22,17 @@ export default function LandingHomePage() {
           <span>Talim Rivoj</span>
         </div>
         <h5 className="mainText">
-        1 HAFTA BEPUL DARSDA KUNDALIK MULOQOTINGIZNI CHET TILLARIDA QILISH DARAJASIGA CHIQING
+          1 HAFTA BEPUL DARSDA KUNDALIK MULOQOTINGIZNI CHET TILLARIDA QILISH DARAJASIGA CHIQING
         </h5>
         <div className="mainBigInfo">
           <div className="imgButton">
             {/* <img src={img1} alt="" /> */}
-            <video controls width="300" height="220">
-              <source src={video1} type='video/mp4' />
-            </video>
-          <Link to={'register'}>  <button>Ro'yxatdan o'tish</button></Link>
+            <div id="video-wrapper">
+              <video controls width="300" height="220" poster={img} >
+                <source src={video1} type='video/mp4' />
+              </video>
+            </div>
+            <Link to={'register'}>  <button>Ro'yxatdan o'tish</button></Link>
           </div>
           <p>Shoshiling! Joylar soni oz qoldi</p>
         </div>
