@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from './images/Logo.png'
+import video1 from './images/vide.mp4'
 import { Link } from 'react-router-dom'
 export default function LandingHomePage() {
 
@@ -24,7 +24,9 @@ export default function LandingHomePage() {
         </h5>
         <div className="mainBigInfo">
           <div className="imgButton">
-            <img src={img1} alt="" />
+            {/* <img src={img1} alt="" /> */}
+            <video src={video1} width="250" height="500" controls>
+</video>
           <Link to={'register'}>  <button>Ro'yxatdan o'tish</button></Link>
           </div>
           <p>Shoshiling! Joylar soni oz qoldi</p>
