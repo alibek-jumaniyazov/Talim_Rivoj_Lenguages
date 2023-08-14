@@ -253,7 +253,6 @@ header p {
     text-align: center;
     color: white;
     width: 226px;
-
 }
 
 .button {
@@ -352,5 +351,8 @@ header p {
     100%{
         margin-left: -430px;
     }
+  }
+  video{
+    border-radius: 20px;
   }
 /* } */
