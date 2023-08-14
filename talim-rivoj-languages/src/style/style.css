@@ -254,9 +254,6 @@ header p {
     width: 226px;
 
 }
-.LongPage a{
-
-}
 
 .button {
     font-family: inherit;
@@ -330,7 +327,7 @@ header p {
     font-weight: 600;
   }
   .line:first-child{
-    animation: anim 20s infinite;
+    animation: anim 35s infinite;
   }
   @keyframes anim {
     0%{
