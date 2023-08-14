@@ -3,11 +3,9 @@ import axios from 'axios';
 import img1 from './images/Logo.png'
 import { Link } from 'react-router-dom';
 
-const TelegramBotForm = ({ setTillar ,tillar}) => {
+const TelegramBotForm = ({ setTillar, tillar }) => {
 
-
-
-
+  const [tekshiruv, setTekshiruv] = useState(false);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -54,6 +52,8 @@ const TelegramBotForm = ({ setTillar ,tillar}) => {
     })
   }
 
+
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -82,7 +82,7 @@ const TelegramBotForm = ({ setTillar ,tillar}) => {
           chat_id: chatId,
           text: message,
         });
-        
+        setTekshiruv(true);
         // Malumotlarni uzatganizdan keyin input ishidegi malumot ochib ketadi
         setFormData({ name: '', tel: '+998 ', setTil: 'Turk' });
       }
@@ -93,37 +93,50 @@ const TelegramBotForm = ({ setTillar ,tillar}) => {
     }
   };
 
+  if (formData.name ==! '', formData.tel ==! '+998 ') {
+    setTekshiruv(true);
+  }
+
+
   return (
     <div className="Modal">
-    <div className="modalHeader">
-      <img src={img1} alt="" />
-    </div>
-    <form onSubmit={handleSubmit} className='ModalBox'>
-      <Link to={"/"}> <i className="fa-solid fa-xmark" onClick={() => closeModal()}></i> </Link>
-      <p className="modalInfo">
-        Ro'yxatdan o'tish uchun
-        ma'lumotlaringizni
-        kiriting!
-      </p>
-      <div className="modalInputs">
-        <div className="inputTitle">
-          <p>Ism Familiya</p>
-          <input type="text" name="name" placeholder="Ism Familiya" value={formData.name} onChange={handleChange} />
+      <div className="modalHeader">
+        <img src={img1} alt="" />
+      </div>
+      <form onSubmit={handleSubmit} className='ModalBox'>
+        <Link to={"/"}> <i className="fa-solid fa-xmark" onClick={() => closeModal()}></i> </Link>
+        <p className="modalInfo">
+          Ro'yxatdan o'tish uchun
+          ma'lumotlaringizni
+          kiriting!
+        </p>
+        <div className="modalInputs">
           <div className="inputTitle">
-            <p>Telefon raqamingiz</p>
-            <input type="tel" name="tel" placeholder="Telefon raqam" value={formData.tel} onChange={handleChange} />
+            <p>Ism Familiya</p>
+            <input type="text" name="name" placeholder="Ism Familiya" value={formData.name} onChange={handleChange} />
+            <div className="inputTitle">
+              <p>Telefon raqamingiz</p>
+              <input type="tel" name="tel" placeholder="Telefon raqam" value={formData.tel} onChange={handleChange} />
+            </div>
           </div>
-        </div>
-        <div className="Languages">
+          <div className="Languages">
             <div className="BgDiv" style={{ left: `${left}%` }}></div>
             <h5 href='#' onClick={() => Turk()} style={{ color: color.turk }}>Turk Tili</h5>
             <h5 href='#' onClick={() => Engilsh()} style={{ color: color.engilsh }}>Ingilz Tili</h5>
             <h5 href='#' onClick={() => Rus()} style={{ color: color.rus }} >Rus Tili</h5>
           </div>
-      </div>
-      <button type="submit" className='modalButton'><Link to={"tgkanal"}>  Yuborish </Link></button>
-    </form>
-  </div>
+        </div>
+        {tekshiruv ? (
+          <button type="submit" className='modalButton'>
+            <Link to={"tgkanal"}>  Yuborish </Link>
+          </button>
+        ) : (
+          <button type="submit" className='modalButton'>
+            Yuborish
+          </button>
+        )}
+      </form>
+    </div>
   );
 };
 
