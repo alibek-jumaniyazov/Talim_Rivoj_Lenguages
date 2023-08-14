@@ -26,7 +26,7 @@ export default function LandingHomePage() {
         <div className="mainBigInfo">
           <div className="imgButton">
             {/* <img src={img1} alt="" /> */}
-            <video controls width="300" height="360">
+            <video controls width="300" height="220">
               <source src={video1} type='video/mp4' />
             </video>
           <Link to={'register'}>  <button>Ro'yxatdan o'tish</button></Link>

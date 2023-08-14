@@ -47,7 +47,7 @@ header p {
     align-items: center;
     flex-direction: column;
     gap: 46px;
-    height: 1100px;
+    height: 1000px;
     padding: 45px 0px;
 }
 
@@ -115,13 +115,8 @@ header p {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-top: -60px;
 }
 
-.imgButton img {
-    width: 280px;
-    margin: 50px auto;
-}
 
 .imgButton button {
     border: none;
@@ -354,6 +349,6 @@ header p {
     }
   }
   video{
-    /* border-radius: 20px; */
-  }
+    border-radius: 20px;
+}
 /* } */
