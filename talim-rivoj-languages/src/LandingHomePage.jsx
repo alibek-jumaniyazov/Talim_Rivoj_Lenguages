@@ -1,6 +1,7 @@
 import React from 'react'
 import video1 from './images/vide.mp4'
 import { Link } from 'react-router-dom'
+
 export default function LandingHomePage() {
 
   
@@ -27,6 +28,7 @@ export default function LandingHomePage() {
             {/* <img src={img1} alt="" /> */}
             <video src={video1} width="250" height="500" controls>
 </video>
+
           <Link to={'register'}>  <button>Ro'yxatdan o'tish</button></Link>
           </div>
           <p>Shoshiling! Joylar soni oz qoldi</p>
