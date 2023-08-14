@@ -1,7 +1,7 @@
 import React from 'react'
 import video1 from './images/video.mp4'
 import img from './images/Logo.png'
-import poster1 from './images/img1.jpeg'
+import poster1 from './images/oblojka.png'
 import { Link } from 'react-router-dom'
 
 export default function LandingHomePage() {
