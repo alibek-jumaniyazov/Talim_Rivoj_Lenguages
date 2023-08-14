@@ -3,7 +3,9 @@ import axios from 'axios';
 import img1 from './images/Logo.png'
 import { Link } from 'react-router-dom';
 
-const TelegramBotForm = ({ setTillar, turk, engilsh, rus }) => {
+const TelegramBotForm = ({ setTillar ,tillar}) => {
+
+
 
 
 
@@ -23,7 +25,7 @@ const TelegramBotForm = ({ setTillar, turk, engilsh, rus }) => {
 
   function Turk() {
     setTil('Turk')
-    setTillar(turk)
+    setTillar("https://t.me/+gSrDzdbWQac1NmYy")
     setLeft(0)
     setColor({
       turk: 'white',
@@ -33,7 +35,7 @@ const TelegramBotForm = ({ setTillar, turk, engilsh, rus }) => {
   }
   function Engilsh() {
     setTil('English')
-    setTillar(engilsh)
+    setTillar("https://t.me/+LNT3E33_0IYyYzZi")
     setLeft(34)
     setColor({
       turk: 'black',
@@ -43,7 +45,7 @@ const TelegramBotForm = ({ setTillar, turk, engilsh, rus }) => {
   }
   function Rus() {
     setTil('Rus')
-    setTillar(rus)
+    setTillar("https://t.me/+08inHuxoGCUyNWFi")
     setLeft(65)
     setColor({
       turk: 'black',
