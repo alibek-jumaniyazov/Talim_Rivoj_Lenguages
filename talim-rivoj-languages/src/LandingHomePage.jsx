@@ -1,6 +1,6 @@
 import React from 'react'
 import video1 from './images/video.mp4'
-import img from './images/Logo.png'
+import img from './images/004.png'
 import poster1 from './images/oblojka.png'
 import { Link } from 'react-router-dom'
 
@@ -13,7 +13,9 @@ export default function LandingHomePage() {
       <div className="header">
         <div className="animated-text">
           <div className="line">Turk Tili</div>
+          <img src={img} alt="" width={"120px"} />
           <div className="line">Rus Tili</div>
+          <img src={img} alt="" width={"120px"} />
           <div className="line">Ingliz Tili</div>
         </div>
       </div>
@@ -29,7 +31,7 @@ export default function LandingHomePage() {
           <div className="imgButton">
             {/* <img src={img1} alt="" /> */}
             <div id="video-wrapper">
-              <video controls width="300" height="220" poster={poster1} >
+              <video controls width="330" height="220" poster={poster1} >
                 <source src={video1} type='video/mp4' />
               </video>
             </div>
