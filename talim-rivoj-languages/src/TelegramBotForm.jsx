@@ -14,7 +14,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
     til: '',
   });
 
-  const [til, setTil] = useState("Turk")
+  const [til, setTil] = useState("Turk 🇹🇷")
   const [color, setColor] = useState({
     turk: 'black',
     engilsh: 'white',
@@ -24,7 +24,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
 
 
   function Engilsh() {
-    setTil('English')
+    setTil('English 🇺🇸')
     setTillar("https://t.me/+LNT3E33_0IYyYzZi")
     setLeft(0)
     setColor({
@@ -34,7 +34,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
     })
   }
   function Turk() {
-    setTil('Turk')
+    setTil(`Turk 🇹🇷`)
     setTillar("https://t.me/+gSrDzdbWQac1NmYy")
     setLeft(34)
     setColor({
@@ -44,7 +44,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
     })
   }
   function Rus() {
-    setTil('Rus')
+    setTil('Rus 🇷🇺')
     setTillar("https://t.me/+08inHuxoGCUyNWFi")
     setLeft(66)
     setColor({
