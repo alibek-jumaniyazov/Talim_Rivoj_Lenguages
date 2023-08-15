@@ -91,11 +91,11 @@ header p {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 21px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     color: white;
-    width: 330.09px;
+    /* width: 350.09px; */
     height: 72px;
     /* padding: 0px 0.089996337890625px 0px 0px; */
 }
@@ -124,7 +124,8 @@ header p {
 
 .imgButton button {
     border: none;
-    width: 282px;
+    width: 320px;
+    margin-bottom: 10px;
     height: 54px;
     padding: 12.050000190734863px 45.40999984741211px 13.949999809265137px 45.59000015258789px;
     border-radius: 15px;

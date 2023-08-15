@@ -31,7 +31,7 @@ export default function LandingHomePage() {
           <div className="imgButton">
             {/* <img src={img1} alt="" /> */}
             <div id="video-wrapper">
-              <video controls width="330" height="220" poster={poster1} >
+              <video controls width="350" height="220" poster={poster1} >
                 <source src={video1} type='video/mp4' />
               </video>
             </div>
