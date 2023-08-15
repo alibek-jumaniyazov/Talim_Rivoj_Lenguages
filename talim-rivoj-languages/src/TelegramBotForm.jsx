@@ -122,7 +122,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
               <input type="tel" name="tel" placeholder="Telefon raqam" value={formData.tel} onChange={handleChange} />
             </div>
             <div className="inputTitle">
-              <p>Tumanni Tanglang</p>
+              <p>Yashash joyingizni tanlang</p>
               <select className='selectViloyat' onChange={(e) => setTuman(e.target.value)}>
                 <option value="Urganch shahri">Urganch Shahri</option>
                 <option value="Xonqa Tumani">Xonqa</option>
