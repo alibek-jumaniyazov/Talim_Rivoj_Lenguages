@@ -150,3 +150,10 @@
     z-index: 9;
     transition: all 0.4s ease;
 }
+.selectViloyat{
+    width: 100%;
+    padding: 20px 20px 20px 5px;
+    outline: 1px solid #010d9d;
+    border-radius: 5px;
+    border: 1.5px solid #010d9d;
+}

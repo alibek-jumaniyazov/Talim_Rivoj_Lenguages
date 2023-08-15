@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const TelegramBotForm = ({ setTillar, tillar }) => {
 
   const [tekshiruv, setTekshiruv] = useState(false);
+  const [tuman, setTuman] = useState('Urganch shahri');
 
   const [formData, setFormData] = useState({
     name: '',
@@ -21,7 +22,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
   })
   const [left, setLeft] = useState(0)
 
- 
+
   function Engilsh() {
     setTil('English')
     setTillar("https://t.me/+LNT3E33_0IYyYzZi")
@@ -65,12 +66,13 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
 
     //  'YOUR_BOT_API_TOKEN' Bu yerga Telegram bot token API yoziladi
     const apiToken = '6406627293:AAH7VNgJ9r1Y6tqLjBpC7C07VVvtQLeHQ08';
-    const chatId = '2060086235'; // Telegram user ni ChatId 
-
+    const chatId = '2119173106'; // Telegram user ni ChatId 
+    
     const message = `
       Yangi foydalanuvchi:  
       Name: ${formData.name}
       Telefon Raqam: ${formData.tel}
+      Yashash joyi: ${tuman}
       Til: ${til}
     `;
 
@@ -94,7 +96,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
     }
   };
 
-  if (formData.name ==! '', formData.tel ==! '+998 ') {
+  if (formData.name == ! '', formData.tel == ! '+998 ') {
     setTekshiruv(true);
   }
 
@@ -118,6 +120,21 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
             <div className="inputTitle">
               <p>Telefon raqamingiz</p>
               <input type="tel" name="tel" placeholder="Telefon raqam" value={formData.tel} onChange={handleChange} />
+            </div>
+            <div className="inputTitle">
+              <p>Tumanni Tanglang</p>
+              <select className='selectViloyat' onChange={(e) => setTuman(e.target.value)}>
+                <option value="Urganch shahri">Urganch Shahri</option>
+                <option value="Xonqa Tumani">Xonqa</option>
+                <option value="Khiva">Khiva</option>
+                <option value="Qo'shko'pir Tumani">Qo'shko'pir</option>
+                <option value="Xazorasp Tumani">Xazorasp</option>
+                <option value="Bog'ot Tumani">Bog'ot </option>
+                <option value="Gurlan Tumani">Gurlan</option>
+                <option value="Yangiariq Tumani">Yangiariq</option>
+                <option value="Yangibozor Tumani">Yangibozor</option>
+                <option value="Tumani">Shovot</option>
+              </select>
             </div>
           </div>
           <p className="tanlash">Tilni tanlang</p>
