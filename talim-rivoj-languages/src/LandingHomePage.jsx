@@ -40,16 +40,22 @@ export default function LandingHomePage() {
           <p>Shoshiling! Joylar soni cheklangan</p>
         </div>
         <div className="mainInfos">
-          <p>3 kunlik marafonda:</p>
+          <p>1 Haftalik bepul darsda :</p>
           <ul>
             <div className="MinInfosLi">
-              <li>Qanday qilib chalg'ituvchi dunyoda xotira va diqqatni yaxshilash mumkin?</li>
+              <li>Boshingizni devorga urish shart bo'lmagan xolda bor imkoniyatlardan foydalanish mohiyatini tushunasiz </li>
             </div>
             <div className="MinInfosLi">
-              <li>Chet tili so'zlarini tezroq yod olish va IELTS imtihoniga samarali tayyorlanish uchun usullar</li>
+              <li>Hafta davomida xotira va diqqatingizni chalg'ituvchi omillardan xalos bo'lishga erishasiz albatda til o'rganish bilan birga</li>
             </div>
             <div className="MinInfosLi">
-              <li>Qanday qilib kitob o'qish odatini shakllantirish va undagi ma'lumotlarni eslab qolish mumkin?</li>
+              <li>Sertifikatlarni qo'lga kiritishda qiynab qo'ymaydigan zeriktirmaydigan samarali usullarga qaratilgan darslar</li>
+            </div>
+            <div className="MinInfosLi">
+              <li>Siz xoxlagan chet tiliga doir aniq tushunarli metodga qaratilgan o'quv dasturi </li>
+            </div>
+            <div className="MinInfosLi">
+              <li>hafta davomida 3 kun til kurslari bilan birga biznes olamiga sayohat hamda shaxsiy rivojlanishga qaratilgan aniq instrumentlar</li>
             </div>
           </ul>
         </div>
