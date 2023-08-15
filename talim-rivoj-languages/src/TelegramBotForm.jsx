@@ -15,29 +15,30 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
 
   const [til, setTil] = useState("Turk")
   const [color, setColor] = useState({
-    turk: 'white',
-    engilsh: 'black',
+    turk: 'black',
+    engilsh: 'white',
     rus: 'black'
   })
   const [left, setLeft] = useState(0)
 
-  function Turk() {
-    setTil('Turk')
-    setTillar("https://t.me/+gSrDzdbWQac1NmYy")
-    setLeft(0)
-    setColor({
-      turk: 'white',
-      engilsh: 'black',
-      rus: 'black'
-    })
-  }
+ 
   function Engilsh() {
     setTil('English')
     setTillar("https://t.me/+LNT3E33_0IYyYzZi")
-    setLeft(34)
+    setLeft(0)
     setColor({
       turk: 'black',
       engilsh: 'white',
+      rus: 'black'
+    })
+  }
+  function Turk() {
+    setTil('Turk')
+    setTillar("https://t.me/+gSrDzdbWQac1NmYy")
+    setLeft(34)
+    setColor({
+      turk: 'white',
+      engilsh: 'black',
       rus: 'black'
     })
   }
@@ -122,8 +123,8 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
           <p className="tanlash">Tilni tanlang</p>
           <div className="Languages">
             <div className="BgDiv" style={{ left: `${left}%` }}></div>
-            <h5 href='#' onClick={() => Turk()} style={{ color: color.turk }}>Turk Tili</h5>
             <h5 href='#' onClick={() => Engilsh()} style={{ color: color.engilsh }}>Ingilz Tili</h5>
+            <h5 href='#' onClick={() => Turk()} style={{ color: color.turk }}>Turk Tili</h5>
             <h5 href='#' onClick={() => Rus()} style={{ color: color.rus }} >Rus Tili</h5>
           </div>
         </div>
