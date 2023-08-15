@@ -59,7 +59,7 @@ header p {
     width: 290px;
     height: 26px;
     border-radius: 50px;
-    border: solid 2px #1d1aa1;
+    border: solid 2px #FCC500;
     color: white;
     font-size: 14px;
     font-weight: 500;
@@ -67,13 +67,15 @@ header p {
 }
 
 .mainHeaderInfo p {
-    background-color: #1d1aa1;
+    background-color: #FCC500;
     width: 138px;
     height: 26px;
+    font-weight: 600;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .mainHeaderInfo span {
@@ -82,6 +84,7 @@ header p {
     align-items: center;
     width: 138px;
     height: 26px;
+
 }
 
 .mainText {
@@ -107,7 +110,7 @@ header p {
 }
 
 .mainBigInfo p {
-    color: rgb(255, 255, 255);
+    color:white;
 }
 
 .imgButton {
@@ -125,8 +128,8 @@ header p {
     height: 54px;
     padding: 12.050000190734863px 45.40999984741211px 13.949999809265137px 45.59000015258789px;
     border-radius: 15px;
-    background-color: #211eb7;
-    color: white;
+    background-color: #FCC500;
+    color: black;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
@@ -179,7 +182,7 @@ header p {
 .footer {
     width: 100%;
     height: 350px;
-    background-color: black;
+    background-color: #FCC500;
     display: flex;
     justify-content: center;
     align-items: center;

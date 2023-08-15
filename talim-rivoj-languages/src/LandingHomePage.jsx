@@ -1,7 +1,7 @@
 import React from 'react'
 import video1 from './images/video.mp4'
 import img from './images/004.png'
-import poster1 from './images/oblojka.png'
+import poster1 from './images/add.png'
 import { Link } from 'react-router-dom'
 
 export default function LandingHomePage() {
@@ -37,7 +37,7 @@ export default function LandingHomePage() {
             </div>
             <Link to={'register'}>  <button>Ro'yxatdan o'tish</button></Link>
           </div>
-          <p>Shoshiling! Joylar soni oz qoldi</p>
+          <p>Shoshiling! Joylar soni cheklangan</p>
         </div>
         <div className="mainInfos">
           <p>3 kunlik marafonda:</p>
