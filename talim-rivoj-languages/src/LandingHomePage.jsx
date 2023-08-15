@@ -55,7 +55,7 @@ export default function LandingHomePage() {
               <li>Siz xoxlagan chet tiliga doir aniq tushunarli metodga qaratilgan o'quv dasturi </li>
             </div>
             <div className="MinInfosLi">
-              <li>hafta davomida 3 kun til kurslari bilan birga biznes olamiga sayohat hamda shaxsiy rivojlanishga qaratilgan aniq instrumentlar</li>
+              <li>Hafta davomida 3 kun til kurslari bilan birga biznes olamiga sayohat hamda shaxsiy rivojlanishga qaratilgan aniq instrumentlar</li>
             </div>
           </ul>
         </div>

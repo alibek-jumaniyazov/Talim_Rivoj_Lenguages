@@ -241,10 +241,16 @@ header p {
 
 .LongPage h1 {
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 34px;
     text-align: center;
     color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: rgb(1,13,157);
+    background: linear-gradient(0deg, rgba(0, 1, 58, 0.784) 26%, rgba(252,197,0,1) 100%);
+    /* background: linear-gradient(0deg, rgba(1,13,157,1) 0%, rgba(0,1,58,1) 100%); */
+
 }
 
 .LongPage p {
@@ -253,14 +259,20 @@ header p {
     line-height: 23px;
     text-align: center;
     color: white;
-    width: 226px;
+    width:80%;
 }
-
+.FooterLogo{
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    /* height: 55px; */
+}
 .button {
     font-family: inherit;
     font-size: 18px;
-    background: rgb(1, 13, 157);
-    background: linear-gradient(0deg, rgba(1, 13, 157, 1) 0%, rgba(0, 1, 58, 1) 100%);
+    background: rgb(1,13,157);
+    background: linear-gradient(0deg, rgba(1,13,157,1) 0%, rgba(0,1,58,1) 100%);
+    /* background: linear-gradient(0deg, rgba(1,13,157,1) 0%, rgba(252,197,0,1) 100%); */
     color: white;
     padding: 0.8em 1.2em;
     display: flex;
@@ -314,6 +326,7 @@ header p {
   .button:hover svg {
     transform: rotate(45deg);
   }
+  
   .animated-text{
     display: flex;
     justify-content: flex-start;

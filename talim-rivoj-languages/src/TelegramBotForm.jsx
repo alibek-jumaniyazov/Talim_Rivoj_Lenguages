@@ -44,7 +44,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
   function Rus() {
     setTil('Rus')
     setTillar("https://t.me/+08inHuxoGCUyNWFi")
-    setLeft(65)
+    setLeft(66)
     setColor({
       turk: 'black',
       engilsh: 'black',
