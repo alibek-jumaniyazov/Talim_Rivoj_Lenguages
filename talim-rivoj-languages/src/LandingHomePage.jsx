@@ -62,9 +62,10 @@ export default function LandingHomePage() {
       </div>
       <div className="footer">
         <div className="footerOne">
-          <p className="footerName">TURDIYEV DOVRANBEK</p>
-          <span className="academyInfo">(STIR: 549477007) 06.05.2023 yil berilgan № 0003423284-sonli ma’lumotnomaga asosan xizmat ko'rsatadi.</span>
-          <p className="phoneNumber">+998 78 113 19 00</p>
+          <p className="footerName">Ta'lim Rivoj Til Markazi</p>
+          <span className="academyInfo">Bepul darsga ro'yxatdan o'tish 25.08.2023 yilgacha davom etadi.
+          Manzil: Darital Savdo Majmuasi Hyundai Avto Salon yonida </span>
+          <p className="phoneNumber">+998 90 077 00 67</p>
           <span className="infoData">Barcha huquqlar himoyalangan, 2023.</span>
         </div>
       </div>

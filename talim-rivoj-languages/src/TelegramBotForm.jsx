@@ -119,6 +119,7 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
               <input type="tel" name="tel" placeholder="Telefon raqam" value={formData.tel} onChange={handleChange} />
             </div>
           </div>
+          <p className="tanlash">Tilni tanlang</p>
           <div className="Languages">
             <div className="BgDiv" style={{ left: `${left}%` }}></div>
             <h5 href='#' onClick={() => Turk()} style={{ color: color.turk }}>Turk Tili</h5>
