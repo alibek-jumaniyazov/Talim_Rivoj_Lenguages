@@ -195,7 +195,7 @@ header p {
     align-items: center;
     flex-direction: column;
     gap: 17px;
-    color: white;
+    color:black;
 }
 
 .footerName {
