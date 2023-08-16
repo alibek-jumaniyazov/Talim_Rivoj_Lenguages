@@ -105,6 +105,7 @@
     border: 1px solid #C9C9C9;
     outline: 1px solid #010d9d;
 }
+
 .modalButton{
     border: none;
     width: 100%;
@@ -119,12 +120,14 @@
     margin-bottom: 30px;
     padding: 0px 136px;
 }
+
 .modalButton a{
     color: white;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
 }
+
 .Languages{
     position: relative;
     width: 100%;
