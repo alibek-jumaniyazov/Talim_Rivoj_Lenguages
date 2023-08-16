@@ -146,9 +146,9 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
           </div>
         </div>
         {/* {tekshiruv ? ( */}
-          <button type="submit" className='modalButton'>
-            <Link to={"tgkanal"}>  Yuborish </Link>
-          </button>
+         <Link to={"tgkanal"}> <button type="submit" className='modalButton'>
+              Yuborish 
+          </button></Link>
         {/* ) : ( */}
           {/* <button type="submit" className='modalButton'> */}
             {/* Yuborish */}
