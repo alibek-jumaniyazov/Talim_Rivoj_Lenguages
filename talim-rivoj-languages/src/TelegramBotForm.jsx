@@ -145,15 +145,15 @@ const TelegramBotForm = ({ setTillar, tillar }) => {
             <h5 href='#' onClick={() => Rus()} style={{ color: color.rus }} >Rus Tili</h5>
           </div>
         </div>
-        {tekshiruv ? (
+        {/* {tekshiruv ? ( */}
           <button type="submit" className='modalButton'>
             <Link to={"tgkanal"}>  Yuborish </Link>
           </button>
-        ) : (
-          <button type="submit" className='modalButton'>
-            Yuborish
-          </button>
-        )}
+        {/* ) : ( */}
+          {/* <button type="submit" className='modalButton'> */}
+            {/* Yuborish */}
+          {/* </button> */}
+        {/* )} */}
       </form>
     </div>
   );
