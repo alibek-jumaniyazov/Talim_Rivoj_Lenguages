@@ -21,7 +21,7 @@ export default function LandingHomePage() {
       </div>
       <div className="main">
         <div className="mainHeaderInfo">
-          <p>19 - NOYABR</p>
+          <p>4 - NOYABR</p>
           <span>Talim Rivoj</span>
         </div>
         <h5 className="mainText">
