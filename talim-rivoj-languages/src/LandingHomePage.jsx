@@ -21,7 +21,7 @@ export default function LandingHomePage() {
       </div>
       <div className="main">
         <div className="mainHeaderInfo">
-          <p>25 - AVGUST</p>
+          <p>19 - NOYABR</p>
           <span>Talim Rivoj</span>
         </div>
         <h5 className="mainText">
@@ -63,7 +63,7 @@ export default function LandingHomePage() {
       <div className="footer">
         <div className="footerOne">
           <p className="footerName">Ta'lim Rivoj Til Markazi</p>
-          <span className="academyInfo">Bepul darsga ro'yxatdan o'tish 25.08.2023 yilgacha davom etadi.
+          <span className="academyInfo">Bepul darsga ro'yxatdan o'tish 19.11.2023 yilgacha davom etadi.
           Manzil: Darital Savdo Majmuasi Hyundai Avto Salon yonida </span>
           <p className="phoneNumber">+998 90 077 00 67</p>
           <span className="infoData">Barcha huquqlar himoyalangan, 2023.</span>
